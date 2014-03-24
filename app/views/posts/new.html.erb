@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Parser App</title>
+</head>
+  <body>
+    <h1>Parser App</h1>
+    <div>
+	<%=form_for(@post) do |f|%>
+	<%=f.label :json%>
+	<%=f.text_field :json%>
+	<%=f.submit%>
+	<%end%>
+	</div>
+  </body>
+</html>
