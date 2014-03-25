@@ -21,10 +21,10 @@ class PostsController < ApplicationController
 
 	def show
 		@post = Post.find(params[:id])
-		@w =  JSON.pretty_generate(JSON.parse(@post.json))
+		#@w =  JSON.pretty_generate(JSON.parse(@post.json))
 
 	    #@str = render_to_string(:json => @w) 
-	    @post.json = @w
+	    #@post.json = @w
 	    @post.save
 	end
 
