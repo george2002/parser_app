@@ -11,10 +11,17 @@ class PostsController < ApplicationController
 	end
 
 	def show
+
+       begin
 		@post = Post.find(params[:id])
 		clean_up =  JSON.pretty_generate(JSON.parse(@post.json)) 
-	    @post.json = clean_up
+		JSON.parse(@post.json)
+		@post.json = clean_up
 	    @post.save
+	   rescue JSON::ParserError => e
+	   	@post.json = "Invalid Json"
+	   	@post.save
+       end	 
 	end
 
 	private
