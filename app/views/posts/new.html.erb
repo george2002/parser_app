@@ -8,8 +8,8 @@
     <div>
 	<%=form_for(@post) do |f|%>
 	<%=f.label :json%>
-	<%=f.text_field :json%>
-	<%=f.submit%>
+	<%=f.text_area :json, :cols => 50, :rows => 10%>
+	<%=f.submit "To Screen"%>
 	<%end%>
 	</div>
   </body>

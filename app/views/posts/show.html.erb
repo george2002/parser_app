@@ -1,1 +1,14 @@
-<%=@post.json%>
+<!DOCTYPE html>
+<html>
+<header>
+<title>Parsed JSON</title>
+</header>
+<body>
+<h1>Parsed JSON</h1>
+<li><%= link_to "Home", root_path%></li>
+<hr>
+<b><%=simple_format(@post.json)%><\b>
+</body>
+</hr>
+
+</html>
