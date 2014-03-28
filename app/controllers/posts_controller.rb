@@ -9,6 +9,10 @@ class PostsController < ApplicationController
 	    @post = Post.new(user_params)
 		@post.save
 
+		if params[:to_screen] || params[:to_pdf]
+			redirect_to @post	
+	    end
+
 if params[:to_file] 
 
 	    begin
