@@ -14,10 +14,17 @@ class PostsController < ApplicationController
 	    end
 	    
 if params[:to_file] 
-	    begin
-			@clean_up =  JSON.pretty_generate(JSON.parse(@post.json)) 
+
+
+clean_up =  JSON.pretty_generate(JSON.parse(@post.json)) 
 			JSON.parse(@post.json)
-			@post.json = @clean_up
+			@post.json = clean_up
+	    	@post.save
+	
+	    begin
+			clean_up =  JSON.pretty_generate(JSON.parse(@post.json)) 
+			JSON.parse(@post.json)
+			@post.json = clean_up
 	    	@post.save
 	    rescue JSON::ParserError => e
 	   		@post.json = "Invalid Json"
