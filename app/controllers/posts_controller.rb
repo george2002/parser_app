@@ -13,26 +13,28 @@ class PostsController < ApplicationController
 			redirect_to @post	
 	    end
 
-if params[:to_file] 
+     if params[:to_file] 
 
 	    begin
 			clean_up =  JSON.pretty_generate(JSON.parse(@post.json)) 
 			JSON.parse(@post.json)
 			@post.json = clean_up
 	    	@post.save
+             
+
+            file = File.open("#{Rails.root}/files/test_file.txt",'w+') do |task|
+	         task.write(@post.json)
+	         end    	
+             send_file("#{Rails.root}/files/test_file.txt",
+              filename: "parsed_json.txt",
+              type: "application/txt")  
 
 	    rescue JSON::ParserError => e
 	   		@post.json = "Invalid Json"
 	   		@post.save
         end	      
-       
-	         file = File.open("#{Rails.root}/files/test_file.txt",'w+') do |task|
-	         task.write(@post.json)
-	         end    	
-             send_file("#{Rails.root}/files/test_file.txt",
-              filename: "parsed_json.txt",
-              type: "application/txt")  	
-	     end
+      	
+	  end
 	
 	 end
 
