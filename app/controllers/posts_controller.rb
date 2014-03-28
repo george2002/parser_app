@@ -22,15 +22,14 @@ if params[:to_file]
 	    rescue JSON::ParserError => e
 	   		@post.json = "Invalid Json"
 	   		@post.save
-        end	 
-       
+        end	      
        
 	         file = File.open("#{Rails.root}/files/test_file.txt",'w+') do |task|
 	         task.write(@post.json)
 	         end    	
              send_file("#{Rails.root}/files/test_file.txt",
               filename: "parsed_json.txt",
-              type: "application/text")  	
+              type: "application/txt")  	
 	     end
 	
 	 end
