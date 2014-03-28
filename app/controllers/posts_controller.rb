@@ -37,6 +37,7 @@ class PostsController < ApplicationController
 
 	def show
 
+
        begin
 		@post = Post.find(params[:id])
 		clean_up =  JSON.pretty_generate(JSON.parse(@post.json)) 
