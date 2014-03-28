@@ -5,15 +5,34 @@ class PostsController < ApplicationController
 	end
 
 	def create
-		if params[:to_screen]
-		@post = Post.new(user_params)
+
+	    @post = Post.new(user_params)
 		@post.save
-		redirect_to @post	
+
+		if params[:to_screen] || params[:to_pdf]
+			redirect_to @post	
 	    end
-	    if params[:to_file]
-	    f = File.new("testing")
+	    
+
+	    begin
+			clean_up =  JSON.pretty_generate(JSON.parse(@post.json)) 
+			JSON.parse(@post.json)
+			@post.json = clean_up
+	    	@post.save
+	    rescue JSON::ParserError => e
+	   		@post.json = "Invalid Json"
+	   		@post.save
+        end	 
+       
+       if params[:to_file] 
+	         file = File.open("#{Rails.root}/files/test_file.txt",'w+') do |task|
+	         task.write(@post.json)
+	         end    	
+             send_file("#{Rails.root}/files/test_file.txt",
+              filename: "o.txt",
+              type: "application/text")  	
+	     end
 	
-	    end
 	 end
 
 	def show
