@@ -5,10 +5,16 @@ class PostsController < ApplicationController
 	end
 
 	def create
+		if params[:to_screen]
 		@post = Post.new(user_params)
 		@post.save
-		redirect_to @post
-	end
+		redirect_to @post	
+	    end
+	    if params[:to_file]
+	    f = File.new("testing")
+	
+	    end
+	 end
 
 	def show
 

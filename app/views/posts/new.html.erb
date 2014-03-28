@@ -7,9 +7,12 @@
     <h1>Parser App</h1>
     <div>
 	<%=form_for(@post) do |f|%>
-	<%=f.label :json%>
+	<div><%=f.label :json, 'Paste a Valid JSON Below:'%></div>
 	<%=f.text_area :json, :cols => 50, :rows => 10%>
-	<%=f.submit "To Screen"%>
+	</div>
+	 <%=submit_tag 'To Screen', :name => 'to_screen'%>
+	 <%=submit_tag 'To File', :name => 'to_file'%>
+	<div>
 	<%end%>
 	</div>
   </body>
