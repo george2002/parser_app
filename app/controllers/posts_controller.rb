@@ -15,12 +15,6 @@ class PostsController < ApplicationController
 	    
 if params[:to_file] 
 
-
-clean_up =  JSON.pretty_generate(JSON.parse(@post.json)) 
-			JSON.parse(@post.json)
-			@post.json = clean_up
-	    	@post.save
-	
 	    begin
 			clean_up =  JSON.pretty_generate(JSON.parse(@post.json)) 
 			JSON.parse(@post.json)
