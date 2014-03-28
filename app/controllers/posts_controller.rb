@@ -29,7 +29,7 @@ class PostsController < ApplicationController
 	         task.write(@post.json)
 	         end    	
              send_file("#{Rails.root}/files/test_file.txt",
-              filename: "o.txt",
+              filename: "parsed_json.txt",
               type: "application/text")  	
 	     end
 	
