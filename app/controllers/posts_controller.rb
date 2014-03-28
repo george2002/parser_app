@@ -13,7 +13,7 @@ class PostsController < ApplicationController
 			redirect_to @post	
 	    end
 	    
-
+if params[:to_file] 
 	    begin
 			clean_up =  JSON.pretty_generate(JSON.parse(@post.json)) 
 			JSON.parse(@post.json)
@@ -24,7 +24,7 @@ class PostsController < ApplicationController
 	   		@post.save
         end	 
        
-       if params[:to_file] 
+       
 	         file = File.open("#{Rails.root}/files/test_file.txt",'w+') do |task|
 	         task.write(@post.json)
 	         end    	
