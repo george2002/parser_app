@@ -17,7 +17,7 @@ class PostsController < ApplicationController
 
 	    begin
 			clean_up =  JSON.pretty_generate(JSON.parse(@post.json)) 
-			JSON.parse(@post.json)
+			#JSON.parse(@post.json)
 			@post.json = clean_up
 	    	@post.save
 
@@ -29,8 +29,9 @@ class PostsController < ApplicationController
 
 
             file = File.open("#{Rails.root}/files/test_file.txt",'w+') do |task|
-	         task.write(clean_up)
-	         end    	
+	         task.write(JSON.pretty_generate(JSON.parse(@post.json)) )
+	         end  
+
              send_file("#{Rails.root}/files/test_file.txt",
               filename: "parsed_json.txt",
               type: "application/txt")    
