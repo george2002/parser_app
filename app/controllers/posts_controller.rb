@@ -15,15 +15,16 @@ class PostsController < ApplicationController
 	    
 if params[:to_file] 
 	    begin
-			clean_up =  JSON.pretty_generate(JSON.parse(@post.json)) 
+			@clean_up =  JSON.pretty_generate(JSON.parse(@post.json)) 
 			JSON.parse(@post.json)
-			@post.json = clean_up
+			@post.json = @clean_up
 	    	@post.save
 	    rescue JSON::ParserError => e
 	   		@post.json = "Invalid Json"
 	   		@post.save
         end	      
        
+
 	         file = File.open("#{Rails.root}/files/test_file.txt",'w+') do |task|
 	         task.write(@post.json)
 	         end    	
