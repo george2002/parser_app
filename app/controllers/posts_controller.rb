@@ -9,13 +9,6 @@ class PostsController < ApplicationController
 	    @post = Post.new(user_params)
 		@post.save
 
-		if params[:to_screen] || params[:to_pdf]
-			ile = File.open("#{Rails.root}/files/test_file.txt",'w+') do |task|
-	         task.write(@post.json)
-	         end   
-			redirect_to @post	
-	    end
-
 if params[:to_file] 
 
 	    begin
@@ -29,9 +22,9 @@ if params[:to_file]
 	   		@post.save
         end	      
        
-	        # file = File.open("#{Rails.root}/files/test_file.txt",'w+') do |task|
-	         #task.write(@post.json)
-	         #end    	
+	         file = File.open("#{Rails.root}/files/test_file.txt",'w+') do |task|
+	         task.write(@post.json)
+	         end    	
              send_file("#{Rails.root}/files/test_file.txt",
               filename: "parsed_json.txt",
               type: "application/txt")  	
