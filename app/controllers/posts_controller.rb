@@ -17,6 +17,7 @@ class PostsController < ApplicationController
 
 	    begin
 			clean_up =  JSON.pretty_generate(JSON.parse(@post.json)) 
+			clean_up = clean_up.delete '{}[],"'
 			JSON.parse(@post.json)
 			@post.json = clean_up
 	    	@post.save
@@ -46,6 +47,7 @@ class PostsController < ApplicationController
        begin
 		@post = Post.find(params[:id])
 		clean_up =  JSON.pretty_generate(JSON.parse(@post.json)) 
+		clean_up = clean_up.delete '{}[],"'
 		JSON.parse(@post.json)
 		@post.json = clean_up
 	    @post.save
