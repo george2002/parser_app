@@ -36,7 +36,8 @@ class PostsController < ApplicationController
 
              send_file("#{Rails.root}/files/test_file.txt",
               filename: "parsed_json.txt",
-              type: "application/txt")    
+              #type: "application/txt"
+              )    
       	
 	  end
 	
