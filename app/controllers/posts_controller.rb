@@ -30,7 +30,8 @@ class PostsController < ApplicationController
 
 
             file = File.open("#{Rails.root}/files/test_file.txt",'w+') do |task|
-	         task.write("the end" + '\n' + "yes")
+	         task.write("the end 
+	         	yes")
 	         end  
 
              send_file("#{Rails.root}/files/test_file.txt",
