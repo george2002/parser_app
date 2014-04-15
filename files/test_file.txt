@@ -1,2 +1,142 @@
-the end 
- yes
+
+  Name: Alla Sharkova
+  Summary of Qualifications: Ms. Sharkova has over 15 years of professional software development experience designing and implementing advanced multi-tier software applications.  For the past ten years Ms. Sharkova worked for projects for Federal Emergency Management Agency (FEMA) and Department of Homeland Security (DHS) and most recently applications for FEMA.gov website.  Mrs. Sharkova’s IT expertise includes all aspects of software development project lifecycle from requirements collection and analysis through design and implementation to deployment user training and support.  While working for FEMA a significant portion of Ms. Sharkova's responsibilities included client interaction problem resolution team coordination and insuring compliance with various standards and security regulations.
+  Technical Skills: 
+    Operating Systems: 
+      MS Windows XP/2000/NT/98
+      Unix (Solaris Linux)
+    
+    Programming Languages: 
+      Java
+      Javascript
+      Ruby
+      C/C++
+      SQL
+      PL/SQL
+      HTML/XHTML
+      XML
+    
+    Development Platforms: 
+      Java J2EE (JSP/Servlets)
+      Apache Struts/Tiles
+      Ruby on Rails/JRuby
+      Oracle XDK/XSQL
+    
+    Development TOols and Other Software: 
+      Eclipse
+      Aptana RadRails
+      Subversion
+      CVS
+      FogBugz
+      Confluence
+      VMware Server
+      Microsoft Office Suite
+      Microsoft Project
+      Microsoft Visio
+    
+    Databases: 
+      Oracle Database 8i - 10g
+      SQL Server
+      Microsoft Access
+    
+    Web & Application Servers: 
+      Apache Web Server
+      Apache Tomcat
+    
+  
+  Experience: 
+    
+      Company: Eye Street Solution
+      Location: Herndon VA
+      Start Date: 04/89
+      End Date: Present
+      Title: Senior Systems Engineer
+      Projects: 
+        
+          Name: FEMA.gov Website
+          Start: 09/2001
+          End: Present
+          Tasks: 
+            Provided continuous support of FEMA.gov website and FEMA.gov applications performed on-demand troubleshooting and user problem resolution
+            Collected functionality requirements from users and used them to create design documents.  Communicated best practices in IT implementation to user groups and FEMA IT team member in order to optimize resulting solutions.  Performed subsequent application design and implementation.  Insured compliance with various security policies and procedures.
+            Conducted meetings and user training sessions.
+            FEMA.gov Configuration Management Database - Designed and developed a Ruby on Rails application with Oracle relational database in order to catalog and audit system components of FEMA.gov and related systems
+            Designed and developed several web-based applications and the corresponding Administration Tools using JSP/Struts and Servlet-based architecture with Oracle relational database.  Functionality included validated data entry administrative and reporting tools with secured access.  Subsequent releases included functional and security enhancements as well as further functionality enhancements.
+            FEMA Admin Users– allows for a uniform authenticated access to all FEMA.gov administrative web applications and a single point of user maintenance
+            FEMA Contact Us – application for collecting user comments that can be plugged into any web page
+            FEMA DNS Registration – application collects and manages data for sites nominated for Intranet DNS Registration
+            FEMA FAQ – a high-traffic question-and-answer application with a data analysis capability
+            FEMA Error 404 – application collects statistics of all user requests that cause a 404 error on FEMA.gov and is used to define intelligent redirects to handle the majority of such request transparently to the user
+            FEMA Financial Disclosure – application collects and maintains employee information supports scheduled data imports and provides a very flexible search and reporting engine
+            FEMA Mitigation Best Practices – application allows for public data entry of mitigation stories and associated media files provides Administrative data formatting capabilities and display of approved formatted content as well as report generation in .pdf formatting
+            FEMA News – application is used to create maintain and publish FEMA Disaster Declarations and News releases
+            DisasterHelp.govDeclarations–applicationforDHSUSDAthatcollects managesand presents information on disaster declarations and amendments
+            Disaster Assistance Improvement Program Stakeholder Outreach – application for the multi agency Disaster Assistance Improvement Program that maintains basic stakeholder information and facilitates email communications and meeting scheduling for various user groups
+            Disaster Management Interoperability Services Registration – application that collects manages presents and exports information on registrants for various Disaster Management Interoperability Services programs
+            Homeland Security IT Product and Service Information Database – application collects and analyzes information on vendors looking to do business with DHS
+            Office of National Preparedness Compendium of Federal Terrorism Training–application collects and maintains data on Federal Terrorism Training courses; a printable version of the Compendium(a .pdf document)is generated nightly
+            Participated in development of several web-based applications and the corresponding Administration Tools using JSP/Struts and Servlet-based architecture with Oracle relational database: 1.FEMA Hurricane Liason Team Administration 2.FEMA Information Resources Library 3.FEMA Photo Library 4.FEMA Seismic Rehabilitation Cost Estimator
+            Converted several legacy applications and the corresponding Administration Tools from Cold Fusion and SQL Server to JSP/Struts and Servlet-based architecture with Oracle relational database.  Significant improvements were made and major additional functionality was implemented as requested by system owners.  Subsequent releases included functional and security enhancements as well as further functionality enhancements. 1.Employment Opportunities in Emergency Management 2.FEMA Kids 3.FEMA Radio News Service 4.National Flood Insurance Program Participating Insurance Companies 5.Phone Book 6.Public Assistance Appeals Database
+          
+        
+        
+          Name: National Fire Investigation and Reporting System (NFIRS)
+          Start: 12/1998
+          End: 08/2001
+          Tasks: 
+            Developed a Reporting Module for the existing mission critical distributed system that performed ad-hoc database queries and produced a variety of reports in .pdf format
+            Converted the entire NFIRS application from AWT and JDK1.1 to Swing and Java 2.
+            Designed and implemented Bulk Import tool that allowed large amounts of data to be uploaded through the NFIRS web site validated and imported into the national database.  Designed and implemented Bulk Export tool.  Both tools provided interrupt and resume capabilities backups and statistics tracking.
+          
+        
+        
+          Name: Fire Explosive Investigation Management System (FEIMS)
+          Start: 12/1999
+          End: 01/2001
+          Tasks: 
+            Designed and implemented an application that was used for case management tool by arson investigators.  The application provided data collection audit analysis and reporting functionality
+          
+        
+        
+          Name: Community Information System (CIS)
+          Start: 04/1998
+          End: 01/2000
+          Tasks: 
+            Converted a 16-bit distributed data entry and reporting application from in C to Java.  Optimized application GUI and reporting logic.  Implemented multi-threaded asynchronous report processing engine and report management tool.  Improved application security. 
+          
+        
+      
+    
+    
+      Company: RWD Technologies Inc.
+      Location: Columbia MD
+      Start Date: 10/95
+      End Date: 03/98
+      Title: Software Engineer
+      Projects: 
+        Participated in analysis design and development of a sales tool for a large furniture manufacturer.  The system was built using Visual C++ 4.x-5.x and MFC under Windows NT with SQL Server as the data storage and Microstation as the graphics engine.
+        Developed a Viewing component that allowed for temporary display of furniture items with options and surface materials applied without committing changes to the project.
+        Developed a Validation Module that allowed to validate product information with an upgrade of retailer data as applied to existing user projects and catalogs.
+        Developed a Worksheet component that allowed to view and edit every aspect of product information related to a specific project in a spreadsheet form.
+      
+    
+    
+      Company: Smith Abbott and Company Inc.
+      Location: Timonium MD
+      Start Date: 01/95
+      End Date: 10/96
+      Title: Software Engineer
+      Projects: 
+        Developed database application programs for accounting needs tracking membership dues subscriptions audits and data conversions. DIBOL on VAX VMS.
+        Actively interacted with customers gathered requirements for product enhancements customized the software based on user feedback. Provided system support.
+      
+    
+  
+  Education: 
+    University: University of Maryland Baltimore County
+    Date of Graduation: 05/95
+    Degree: Bachelor of Science 
+    Major: Computer Science
+    Minor: Mathematics
+    Other: Member of Upsilon Pi Epsilon Honors Society
+  

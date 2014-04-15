@@ -30,13 +30,13 @@ class PostsController < ApplicationController
 
 
             file = File.open("#{Rails.root}/files/test_file.txt",'w+') do |task|
-	         task.write("the end \n yes")
+	         task.write(clean_up)
 	         end  
-
-             send_data(@post.json,
-              filename: "parsed_json.txt",
-              #type: "application/txt"
-              )    
+              
+              
+             send_file("#{Rails.root}/files/test_file.txt",
+             filename: "parsed_json.txt",
+             type: "application/txt")    
       	
 	  end
 	
