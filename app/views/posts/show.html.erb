@@ -7,8 +7,12 @@
 <h1>Parsed JSON</h1>
 <li><%= link_to "Home", root_path%></li>
 <hr>
-<b><%=simple_format(@post.json)%></b>
-</body>
+<%keys = @pj.keys%>
+<%keys.each do |key|%>
+<%=parset(@pj, key)%>
+<%end%>
 </hr>
+</body>
+
 
 </html>

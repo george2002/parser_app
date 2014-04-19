@@ -33,10 +33,10 @@ class PostsController < ApplicationController
 	         task.write(clean_up)
 	         end  
               
-              
-             send_file("#{Rails.root}/files/test_file.txt",
-             filename: "parsed_json.txt",
-             type: "application/txt")    
+             send_data("people\np", filename:  "name.txt")
+             #send_file("#{Rails.root}/files/test_file.txt",
+             #filename: "parsed_json.txt",
+             #type: "application/txt")    
       	
 	  end
 	
@@ -47,6 +47,7 @@ class PostsController < ApplicationController
 
        begin
 		@post = Post.find(params[:id])
+		@pj = JSON.parse(@post.json)
 		clean_up =  JSON.pretty_generate(JSON.parse(@post.json)) 
 		clean_up = clean_up.delete '{}[],"'
 		JSON.parse(@post.json)
